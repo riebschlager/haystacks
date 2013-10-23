@@ -122,5 +122,5 @@ function renderDribbblePicker(img) {
     $('#dribbble-image img').attr('src', img.imageTeaserUrl);
     $('#dribbble-credit').html('<p><small>Image from <a href="' + img.playerUrl + '">' + img.playerName + '</a></small></p>');
     var pjs = Processing.getInstanceById('loadimg');
-    pjs.loadAndShow('/proxy.php?csurl=' + img.imageTeaserUrl);
+    pjs.loadAndShow('proxy.php?csurl=' + img.imageTeaserUrl);
 }
